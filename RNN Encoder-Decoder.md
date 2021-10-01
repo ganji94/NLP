@@ -67,7 +67,7 @@ For example, in speech recognition problem, to transfer an ***input audio clip**
 ### 2-2. Numerical Approach
 A RNN encoder-decoder model is a general method to learn the conditional distribution over a ***variable-length sequence*** conditioned on yet ***another variable-length sequence*** ![image](https://user-images.githubusercontent.com/74042372/135579390-5499e71f-fc42-43d9-bbc1-ef86cb3b88ea.png), where input and output sequence ***lengths T and T' may differ***.
 
-The encoder is an RNN that sequentially reads each symbol of an ***input sequence*** (![image](https://user-images.githubusercontent.com/74042372/135590170-6cee3090-6bee-4a36-aa25-de715284e8ab.png)).
+The ***encoder*** is an RNN that sequentially reads each symbol of an ***input sequence*** (![image](https://user-images.githubusercontent.com/74042372/135590170-6cee3090-6bee-4a36-aa25-de715284e8ab.png)).
 As it reads eah symbol, the ***hidden state*** changes accrording to,
 
 ![image](https://user-images.githubusercontent.com/74042372/135588483-55de76ca-b37e-48cf-a942-114eab14ee4d.png).
@@ -75,7 +75,7 @@ As it reads eah symbol, the ***hidden state*** changes accrording to,
 After reading the end of the sequence (EOS), the ***hidden state becomes a summary of the whole input sequence***, which is the ***context vector*** (![image](https://user-images.githubusercontent.com/74042372/135590230-0e32c4ca-654c-4d46-9826-582892086f8b.png))
 .
 
-The decoder is another RNN which is trained to generate the output sequence, by predicting the next symbol ![image](https://user-images.githubusercontent.com/74042372/135587236-8e4d16ae-04e0-4f0a-9ab0-833a5d0f35b2.png) given the ***hidden state*** (![image](https://user-images.githubusercontent.com/74042372/135590825-d35462fd-0e42-481d-8242-b43688ca0a6f.png)). 
+The ***decoder*** is another RNN which is trained to generate the output sequence, by predicting the next symbol ![image](https://user-images.githubusercontent.com/74042372/135587236-8e4d16ae-04e0-4f0a-9ab0-833a5d0f35b2.png) given the ***hidden state*** (![image](https://user-images.githubusercontent.com/74042372/135590825-d35462fd-0e42-481d-8242-b43688ca0a6f.png)). 
 
  
 ## Reference
