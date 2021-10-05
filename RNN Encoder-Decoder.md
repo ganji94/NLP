@@ -112,19 +112,19 @@ is the set of the ***model parameters*** and ![image](https://user-images.github
 
 [paperlink]: https://arxiv.org/pdf/1406.1078.pdf
 
-  * [RNN Encoder-Decoder Reference Blog 1][rnnedblog1link]
+  * [RNN Encoder-Decoder Blog 1][rnnedblog1link]
 
 [rnnedblog1link]: https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=ckdgus1433&logNo=221608376139
 
-  * [RNN Encoder-Decoder Reference Blog 2][rnnedblog2link]
+  * [RNN Encoder-Decoder Blog 2][rnnedblog2link]
 
 [rnnedblog2link]: https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=ckdgus1433&logNo=221608376139
 
-  * [RNN Encoder-Decoder Reference Blog 3][rnnedblog3link]
+  * [RNN Encoder-Decoder Blog 3][rnnedblog3link]
 
 [rnnedblog3link]: https://machinelearningmastery.com/encoder-decoder-recurrent-neural-network-models-neural-machine-translation/
 
-  * [End-To-End Model Reference Video 1][rnnedvideo1link]
+  * [End-To-End Model Video 1][rnnedvideo1link]
 
 [rnnedvideo1link]: https://youtu.be/ImUoubi_t7s
 
