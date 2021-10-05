@@ -102,13 +102,13 @@ is the set of the ***model parameters*** and ![image](https://user-images.github
 ## Reference
 1. RNN Reference:
 
-  * [RNN reference blog][rnnblog1link]
+  * [RNN blog][rnnblog1link]
 
 [rnnblog1link]: https://22-22.tistory.com/25
 
 2. RNN Encoder-Decoder Reference:
 
-  * [NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE (paper, May 2016)][paperlink]
+  * [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation][paperlink]
 
 [paperlink]: https://arxiv.org/pdf/1406.1078.pdf
 
