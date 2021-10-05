@@ -43,6 +43,20 @@ By combining these probabilities, we can compute the probability of the ***seque
 
 From this distribution, it is straightforward to sample a new sequence by iteratively sampling a symbol at eath time step.
 
+### 1-3. Vanilla RNN
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/74042372/135961330-49a017a4-ddde-4986-936c-d57f276b04a1.png" width="30%" height="40%" title="RNN"></img>
+</p>
+
+We call the most basic shape of RNN as ***vanilla RNN***. Vanilla RNN has ![image](https://user-images.githubusercontent.com/74042372/135961690-e857ebb3-2bc8-479d-ae4b-70d1f27bf783.png) and ![image](https://user-images.githubusercontent.com/74042372/135961741-baf686f1-f361-45cc-9f63-2d16b9fbbb6b.png) as inputs.
+Both inputs are multiplied by their weights, ![image](https://user-images.githubusercontent.com/74042372/135961849-9352509a-35a9-4b95-99bd-944fc5a74ff9.png) and ![image](https://user-images.githubusercontent.com/74042372/135961866-f9cbca14-e2c1-4578-9896-da162169cb1e.png), and get into activation function, hyperbolic tangent.
+
+![image](https://user-images.githubusercontent.com/74042372/135962172-f6564933-7f10-49a2-9089-7ba980f11cb0.png)
+
+
+
+
 ---
 
 ## RNN Encoder-Decoder
@@ -94,6 +108,8 @@ The two components of the proposed RNN encoder-decoder are jointly ***trained to
 where, ![image](https://user-images.githubusercontent.com/74042372/135945999-f4fb40ec-9ffa-4894-8134-e84e4727f710.png)
 is the set of the ***model parameters*** and ![image](https://user-images.githubusercontent.com/74042372/135946091-3064ca4c-b816-45bc-a637-322a18bbca87.png) is an ***(input sequence, output sequence)*** pair from the training set.
 
+### 2-3. Sequence-to-Sequence
+
 
 
 
@@ -102,7 +118,7 @@ is the set of the ***model parameters*** and ![image](https://user-images.github
 ## Reference
 1. RNN Reference:
 
-  * [RNN blog][rnnblog1link]
+  * [RNN Blog][rnnblog1link]
 
 [rnnblog1link]: https://22-22.tistory.com/25
 
@@ -111,6 +127,10 @@ is the set of the ***model parameters*** and ![image](https://user-images.github
   * [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation][paperlink]
 
 [paperlink]: https://arxiv.org/pdf/1406.1078.pdf
+
+  * [Sequence to Sequence Learning with Neural Networks][paperlink]
+
+[paperlink]: https://proceedings.neurips.cc/paper/2014/file/a14ac55a4f27472c5d894ec1c3c743d2-Paper.pdf
 
   * [RNN Encoder-Decoder Blog 1][rnnedblog1link]
 
@@ -123,6 +143,10 @@ is the set of the ***model parameters*** and ![image](https://user-images.github
   * [RNN Encoder-Decoder Blog 3][rnnedblog3link]
 
 [rnnedblog3link]: https://machinelearningmastery.com/encoder-decoder-recurrent-neural-network-models-neural-machine-translation/
+
+  * [Seq2Seq Blog][rnnedblog3link]
+
+[seq2seqbloglink]: https://wikidocs.net/24996
 
   * [End-To-End Model Video 1][rnnedvideo1link]
 
