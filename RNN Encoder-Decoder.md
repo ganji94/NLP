@@ -75,7 +75,28 @@ As it reads eah symbol, the ***hidden state*** changes accrording to,
 After reading the end of the sequence (EOS), the ***hidden state becomes a summary of the whole input sequence***, which is the ***context vector*** (![image](https://user-images.githubusercontent.com/74042372/135590230-0e32c4ca-654c-4d46-9826-582892086f8b.png))
 .
 
-The ***decoder*** is another RNN which is trained to generate the output sequence, by predicting the next symbol ![image](https://user-images.githubusercontent.com/74042372/135587236-8e4d16ae-04e0-4f0a-9ab0-833a5d0f35b2.png) given the ***hidden state*** (![image](https://user-images.githubusercontent.com/74042372/135590825-d35462fd-0e42-481d-8242-b43688ca0a6f.png)). 
+The ***decoder*** is another RNN which is trained to generate the output sequence, by predicting the next symbol ![image](https://user-images.githubusercontent.com/74042372/135587236-8e4d16ae-04e0-4f0a-9ab0-833a5d0f35b2.png) given the ***hidden state*** (![image](https://user-images.githubusercontent.com/74042372/135590825-d35462fd-0e42-481d-8242-b43688ca0a6f.png)).
+But unlike encoder, both ![image](https://user-images.githubusercontent.com/74042372/135587236-8e4d16ae-04e0-4f0a-9ab0-833a5d0f35b2.png) and ![image](https://user-images.githubusercontent.com/74042372/135590825-d35462fd-0e42-481d-8242-b43688ca0a6f.png) are conditioned on ![image](https://user-images.githubusercontent.com/74042372/135938989-b0518476-662b-4e15-ab78-55145f712fa4.png) and on the summary of ![image](https://user-images.githubusercontent.com/74042372/135939060-a94daf86-ee70-4b13-82b1-85681f9e7f4f.png) of the input sequence.
+The ***hidden state of the decoder at time*** ![image](https://user-images.githubusercontent.com/74042372/135939216-cea9a1b1-d48f-49d6-bd99-7abf47319cf4.png) is computed by,
+
+![image](https://user-images.githubusercontent.com/74042372/135939136-4c6ea3c5-b432-484a-b822-e8efcffd1f99.png),
+
+and the ***conditional distribution of the next symbol*** is
+
+![image](https://user-images.githubusercontent.com/74042372/135939326-efa029c2-013a-428c-a1cf-72ae2d048d37.png),
+
+for given activation functions ![image](https://user-images.githubusercontent.com/74042372/135939348-e869ac90-5090-41f2-ae25-c9e6b27b6487.png) and ![image](https://user-images.githubusercontent.com/74042372/135939357-d2f97d7a-1425-4417-ad19-dcc0d9b289f4.png) (the latter must produce valid probabilities, e.g. with a softmax).
+
+The two components of the proposed RNN encoder-decoder are jointly ***trained to maximize the conditional log-likelihood***
+
+![image](https://user-images.githubusercontent.com/74042372/135945612-23a08b1b-9eaa-44a2-b718-487df52c9a8d.png)
+
+where, ![image](https://user-images.githubusercontent.com/74042372/135945999-f4fb40ec-9ffa-4894-8134-e84e4727f710.png)
+is the set of the ***model parameters*** and ![image](https://user-images.githubusercontent.com/74042372/135946091-3064ca4c-b816-45bc-a637-322a18bbca87.png) is an ***(input sequence, output sequence)*** pair from the training set.
+
+
+
+
 
  
 ## Reference
