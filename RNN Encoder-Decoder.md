@@ -49,11 +49,18 @@ From this distribution, it is straightforward to sample a new sequence by iterat
 <img src="https://user-images.githubusercontent.com/74042372/135961330-49a017a4-ddde-4986-936c-d57f276b04a1.png" width="30%" height="40%" title="RNN"></img>
 </p>
 
-We call the most basic shape of RNN as ***vanilla RNN***. Vanilla RNN has ![image](https://user-images.githubusercontent.com/74042372/135961690-e857ebb3-2bc8-479d-ae4b-70d1f27bf783.png) and ![image](https://user-images.githubusercontent.com/74042372/135961741-baf686f1-f361-45cc-9f63-2d16b9fbbb6b.png) as inputs.
+We call ***the most basic shape of RNN's hidden state*** as ***vanilla RNN***. Vanilla RNN has ![image](https://user-images.githubusercontent.com/74042372/135961690-e857ebb3-2bc8-479d-ae4b-70d1f27bf783.png) and ![image](https://user-images.githubusercontent.com/74042372/135961741-baf686f1-f361-45cc-9f63-2d16b9fbbb6b.png) as inputs.
 Both inputs are multiplied by their weights, ![image](https://user-images.githubusercontent.com/74042372/135961849-9352509a-35a9-4b95-99bd-944fc5a74ff9.png) and ![image](https://user-images.githubusercontent.com/74042372/135961866-f9cbca14-e2c1-4578-9896-da162169cb1e.png), and get into activation function, hyperbolic tangent.
 
 ![image](https://user-images.githubusercontent.com/74042372/135962172-f6564933-7f10-49a2-9089-7ba980f11cb0.png)
 
+Vanilla RNN has significant issue, ***the problem of long-term dependencies***. The problem of long-term dependencies indicates, a loss of information as time step is getting longer. Therefore, we use LSTM instead of vanilla RNN.
+
+### 1-4. LSTM (Long Short-Term Memory)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/74042372/136108300-13f12df3-08ad-4027-8e49-1c5f3d4b460e.png" width="30%" height="40%" title="RNN"></img>
+</p>
 
 
 
